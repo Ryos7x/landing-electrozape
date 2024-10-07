@@ -1,39 +1,48 @@
 ---
 import { Image } from "astro:assets";
 ---
-<section class="bg-black text-white p-8 max-w-md mx-auto rounded-lg">
-  <h2 class="text-3xl font-bold text-center mb-4">Contacto</h2>
-  <p class="text-center mb-6">¡Contáctanos por correo!</p>
-  
-  <form class="space-y-4">
-    <div class="flex">
-      <input
-        type="email"
-        placeholder="tucorreo@gmail.com"
-        class="flex-grow p-2 rounded-l-md bg-white text-black"
-        required
-      />
-      <button
-        type="submit"
-        class="bg-white text-black p-2 rounded-r-md hover:bg-gray-200 transition-colors"
-        aria-label="Enviar"
+
+<section class="section-container bg-black text-white" id="contact">
+  <div class="flex flex-col max-w-section gap-y-8 text-center">
+    <h2 class="text-2xl font-bold">Contacto</h2>
+    <p class="">¡Contáctanos por correo!</p>
+
+    <form class="">
+      <div class="flex flex-col gap-y-4 ">
+        <input
+          type="email"
+          placeholder="tucorreo@gmail.com"
+          class="flex-grow p-2 rounded-md bg-white text-black"
+          required
+        />
+        <button
+          type="submit"
+          class="bg-white text-textColor font-bold p-2 rounded-md"
+        >
+          <span>Enviar</span>
+        </button>
+      </div>
+    </form>
+
+    <div class="flex gap-x-4 justify-center">
+      <a
+        href="#contact"
+        aria-label="Instagram"
+        class="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors"
       >
-      </button>
+      </a>
+      <a
+        href="#contact"
+        aria-label="Facebook"
+        class="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors"
+      >
+      </a>
+      <a
+        href="#contact"
+        aria-label="Teléfono"
+        class="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors"
+      >
+      </a>
     </div>
-    
-    <div class="flex items-center space-x-2">
-      <input type="checkbox" id="recaptcha" class="h-5 w-5" required />
-      <label for="recaptcha" class="text-sm">I'm not a robot</label>
-      <img src="/recaptcha-logo.png" alt="reCAPTCHA logo" class="h-8" />
-    </div>
-  </form>
-  
-  <div class="flex justify-center space-x-4 mt-6">
-    <a href="#" aria-label="Instagram" class="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors">
-    </a>
-    <a href="#" aria-label="Facebook" class="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors">
-    </a>
-    <a href="#" aria-label="Teléfono" class="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors">
-    </a>
   </div>
 </section>
