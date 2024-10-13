@@ -2,45 +2,52 @@
 import { Image } from "astro:assets";
 ---
 
-<section class="section-container bg-black text-white" id="contact">
-  <div class="flex flex-col max-w-section gap-y-8 text-center">
-    <h2 class="text-2xl font-bold">Contacto</h2>
-    <p class="">¡Contáctanos por correo!</p>
+<section
+  class="section-container bg-darkBackground text-white py-16"
+  id="contact"
+>
+  <div class="flex flex-col max-w-section mx-auto gap-y-8 text-center px-4">
+    <h2 class="text-3xl font-bold md:text-4xl">Contacto</h2>
+    <p class="text-lg md:text-xl">
+      ¡Contáctanos por correo o en nuestras redes sociales!
+    </p>
 
-    <form class="">
-      <div class="flex flex-col gap-y-4 ">
+    <form class="w-full max-w-md mx-auto">
+      <div class="flex flex-col gap-y-4">
         <input
           type="email"
           placeholder="tucorreo@gmail.com"
-          class="flex-grow p-2 rounded-md bg-white text-black"
+          class="w-full p-3 rounded-md bg-whiteBackground text-textColor focus:ring-2 focus:ring-primaryRed"
           required
         />
         <button
           type="submit"
-          class="bg-white text-textColor font-bold p-2 rounded-md"
+          class="bg-primaryRed text-whiteBackground font-bold p-3 rounded-md hover:bg-red-700 transition-colors"
         >
           <span>Enviar</span>
         </button>
       </div>
     </form>
 
-    <div class="flex gap-x-4 justify-center">
+    <div class="flex gap-x-6 justify-center mt-6">
       <a
-        href="#contact"
+        href="#instagram"
         aria-label="Instagram"
-        class="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors"
+        class="bg-whiteBackground text-textColor p-3 rounded-full hover:bg-gray-200"
       >
       </a>
+
       <a
-        href="#contact"
+        href="#facebook"
         aria-label="Facebook"
-        class="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors"
+        class="bg-whiteBackground text-textColor p-3 rounded-full hover:bg-gray-200"
       >
       </a>
+
       <a
-        href="#contact"
+        href="tel:+1234567890"
         aria-label="Teléfono"
-        class="bg-white text-black p-2 rounded-full hover:bg-gray-200 transition-colors"
+        class="bg-whiteBackground text-textColor p-3 rounded-full hover:bg-gray-200"
       >
       </a>
     </div>
