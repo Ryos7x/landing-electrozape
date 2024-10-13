@@ -1,0 +1,51 @@
+<header class="sticky top-0 bg-darkBackground py-3 px-6 sm:px-16 lg:px-24">
+  <div class="container flex justify-between items-center text-whiteBackground">
+    <div class="flex items-center">
+      <h1 class="text-xl font-bold text-whiteBackground">
+        <a href="#home">Electrozape</a>
+      </h1>
+    </div>
+
+    <nav class="hidden md:flex gap-x-4">
+      <a href="#about" class="hover:text-primaryRed">Acerca de</a>
+      <a href="#problem" class="hover:text-primaryRed">Problema</a>
+      <a href="#contact" class="hover:text-primaryRed">Contacto</a>
+    </nav>
+
+    <div class="md:hidden">
+      <button id="menu-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden md:hidden">
+    <nav
+      class="flex flex-col items-center p-2 gap-y-2 text-whiteBackground border-t"
+    >
+      <a href="#about" class="hover:text-primaryRed">Acerca de</a>
+      <a href="#problem" class="hover:text-primaryRed">Problema</a>
+      <a href="#contact" class="hover:text-primaryRed">Contacto</a>
+    </nav>
+  </div>
+</header>
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
