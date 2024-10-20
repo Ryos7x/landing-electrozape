@@ -1,0 +1,23 @@
+---
+const { phoneNumber = "1121708385" } = Astro.props;
+---
+
+<button
+  id="whatsapp-button"
+  class="fixed bottom-4 right-4 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-300 ease-in-out hidden"
+  aria-label="Contactar por WhatsApp"
+  onclick={`window.open('https://wa.me/${phoneNumber}', '_blank')`}
+>
+  <img src="/whatsapp.svg" alt="" />
+</button>
+
+<script>
+  window.addEventListener("scroll", () => {
+    const button = document.getElementById("whatsapp-button");
+    if (window.pageYOffset > 300) {
+      button.classList.remove("hidden");
+    } else {
+      button.classList.add("hidden");
+    }
+  });
+</script>
