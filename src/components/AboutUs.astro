@@ -3,60 +3,91 @@ import { Image } from "astro:assets";
 ---
 
 <section class="section-container text-white" id="about">
-  <div class="flex flex-col max-w-section gap-y-8">
-    <h2 class="text-2xl text-primaryRed font-bold text-center">
+  <div class="flex flex-col max-w-section gap-y-12">
+    <h2 class="text-3xl text-primaryRed font-bold text-center">
       Sobre Nosotros
     </h2>
     <div
-      class="grid grid-cols-1 text-base gap-y-8 text-center md:text-lg lg:gap-y-16 lg:items-center"
+      class="flex flex-col text-start p-6 bg-redBackground rounded-xl border-textColor md:p-8"
     >
+      <p class="leading-relaxed">
+        En ElectroZape, nos dedicamos a la fabricación y venta de lámparas mata
+        insectos de alta calidad. Nuestro objetivo es ofrecer soluciones
+        innovadoras que protejan a las personas de las plagas, mejorando la
+        calidad de vida y la salud pública.
+      </p>
+    </div>
+    <div>
+      <Image
+        src="/about-us.png"
+        alt="Electrozape About Us"
+        width={250}
+        height={250}
+      />
+    </div>
+
+    <div
+      class="grid grid-cols-1 gap-y-12 text-base md:grid-cols-2 md:gap-x-8 lg:gap-x-12 lg:gap-y-16 text-center lg:text-left"
+    >
+      <div class="hidden md:flex">
+        <Image
+          src="/about-us.png"
+          alt="Electrozape About Us"
+          width={250}
+          height={250}
+        />
+      </div>
+
       <div
-        class="flex flex-col text-start p-4 bg-redBackground rounded-xl border-2 border-textColor md:p-8"
+        class="flex flex-col gap-y-4 text-start p-6 bg-redBackground rounded-xl border-textColor md:p-8"
       >
-        <p>
-          ElectroZape es una empresa que fabrica y vende lámparas mata insectos
-          de alta calidad, diseñadas para eliminar mosquitos y otros insectos
-          voladores. Nuestra misión es ofrecer soluciones innovadoras para
-          proteger a las personas y sus espacios de plagas, mejorando así la
-          calidad de vida y la salud pública.
+        <h3 class="text-xl text-white font-bold">
+          Venta Mayorista y Minorista
+        </h3>
+        <p class="leading-relaxed">
+          Ofrecemos venta directa tanto a mayoristas como a minoristas, con un
+          equipo de profesionales que garantiza un servicio de alta calidad en
+          cada etapa del proceso de compra.
         </p>
       </div>
 
       <div
-        class="flex flex-col gap-y-4 text-start p-4 bg-redBackground rounded-xl border-2 border-textColor md:p-8"
+        class="flex flex-col gap-y-4 text-start p-6 bg-redBackground rounded-xl border-textColor md:p-8"
       >
-        <h3 class="text-lg text-white font-bold">
-          Venta mayorista y minorista
-        </h3>
-        <p>
-          Contamos con un equipo de expertos listos para brindar asistencia
-          técnica en todo momento, asegurando que cada cliente reciba el soporte
-          necesario para instalar y mantener nuestros productos de manera
-          óptima.
+        <h3 class="text-xl text-white font-bold">Soporte Técnico</h3>
+        <p class="leading-relaxed">
+          Nuestro equipo de expertos está siempre disponible para brindar
+          asistencia técnica, asegurando la correcta instalación y mantenimiento
+          de nuestras lámparas mata insectos.
         </p>
       </div>
-      <div
-        class="flex flex-col gap-y-4 text-start p-4 bg-redBackground rounded-xl border-2 border-textColor md:p-8"
-      >
-        <h3 class="text-lg text-white font-bold">Soporte técnico</h3>
-        <p>
-          Contamos con un equipo de expertos listos para brindar asistencia
-          técnica en todo momento, asegurando que cada cliente reciba el soporte
-          necesario para instalar y mantener nuestros productos de manera
-          óptima.
-        </p>
+      <div class="hidden md:flex">
+        <Image
+          src="/about-us.png"
+          alt="Electrozape About Us"
+          width={250}
+          height={250}
+        />
       </div>
+      <div class="hidden md:flex">
+        <Image
+          src="/about-us.png"
+          alt="Electrozape About Us"
+          width={250}
+          height={250}
+        />
+      </div>
+
       <div
-        class="flex flex-col gap-y-4 text-start p-4 bg-redBackground rounded-xl border-2 border-textColor md:p-8"
+        class="flex flex-col gap-y-4 text-start p-6 bg-redBackground rounded-xl border-textColor md:p-8"
       >
-        <h3 class="text-lg text-white font-bold">
-          Asesoramiento pre y postventa
+        <h3 class="text-xl text-white font-bold">
+          Asesoramiento Pre y Postventa
         </h3>
-        <p>
-          Ofrecemos un servicio de asesoramiento integral antes y después de la
-          compra, ayudando a nuestros clientes a seleccionar la mejor solución
-          para sus necesidades y brindando soporte continuo para garantizar el
-          correcto funcionamiento de nuestras lámparas.
+        <p class="leading-relaxed">
+          Brindamos asesoramiento personalizado antes y después de la compra,
+          ayudando a nuestros clientes a encontrar la mejor solución para sus
+          necesidades y garantizando el correcto uso de nuestros productos.
         </p>
       </div>
     </div>
