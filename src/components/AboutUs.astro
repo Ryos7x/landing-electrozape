@@ -18,26 +18,12 @@ import { Image } from "astro:assets";
       </p>
     </div>
     <div>
-      <Image
-        src="/about-us.png"
-        alt="Electrozape About Us"
-        width={250}
-        height={250}
-      />
+      <img src="/empresa.jpg" alt="Electrozape About Us" class="rounded-md" />
     </div>
 
     <div
       class="grid grid-cols-1 gap-y-12 text-base md:grid-cols-2 md:gap-x-8 lg:gap-x-12 lg:gap-y-16 text-center lg:text-left"
     >
-      <div class="hidden md:flex">
-        <Image
-          src="/about-us.png"
-          alt="Electrozape About Us"
-          width={250}
-          height={250}
-        />
-      </div>
-
       <div
         class="flex flex-col gap-y-4 text-start p-6 bg-redBackground rounded-xl border-textColor md:p-8"
       >
@@ -61,22 +47,6 @@ import { Image } from "astro:assets";
           de nuestras lámparas mata insectos.
         </p>
       </div>
-      <div class="hidden md:flex">
-        <Image
-          src="/about-us.png"
-          alt="Electrozape About Us"
-          width={250}
-          height={250}
-        />
-      </div>
-      <div class="hidden md:flex">
-        <Image
-          src="/about-us.png"
-          alt="Electrozape About Us"
-          width={250}
-          height={250}
-        />
-      </div>
 
       <div
         class="flex flex-col gap-y-4 text-start p-6 bg-redBackground rounded-xl border-textColor md:p-8"
@@ -88,6 +58,17 @@ import { Image } from "astro:assets";
           Brindamos asesoramiento personalizado antes y después de la compra,
           ayudando a nuestros clientes a encontrar la mejor solución para sus
           necesidades y garantizando el correcto uso de nuestros productos.
+        </p>
+      </div>
+      <div
+        class="flex flex-col gap-y-4 text-start p-6 bg-redBackground rounded-xl border-textColor md:p-8"
+      >
+        <h3 class="text-xl text-white font-bold">Garantía y Reemplazo</h3>
+        <p class="leading-relaxed">
+          Respaldamos la calidad de nuestros productos ofreciendo una garantía
+          sólida y opciones de reemplazo en caso de defectos de fabricación. Nos
+          comprometemos a brindar una solución rápida y efectiva, asegurando la
+          satisfacción y confianza de nuestros clientes en cada compra.
         </p>
       </div>
     </div>
